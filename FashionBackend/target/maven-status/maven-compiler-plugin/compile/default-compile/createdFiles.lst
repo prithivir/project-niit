@@ -1,0 +1,13 @@
+com\niit\dao\CartDao.class
+com\niit\model\Product.class
+com\niit\model\Supplier.class
+com\niit\dao\ProductDaoImpl.class
+com\niit\dao\CartDaoImpl.class
+com\niit\FashionBackend\App.class
+com\niit\dao\CategoryDao.class
+com\niit\dao\CategoryDaoImpl.class
+com\niit\dao\SupplierDao.class
+com\niit\model\Category.class
+com\niit\dao\ProductDao.class
+com\niit\model\Cart.class
+com\niit\dao\SupplierDaoImpl.class

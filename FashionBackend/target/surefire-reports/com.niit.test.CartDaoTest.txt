@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.niit.test.CartDaoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.946 sec <<< FAILURE! - in com.niit.test.CartDaoTest
+com.niit.test.CartDaoTest  Time elapsed: 5.93 sec  <<< ERROR!
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cartDao': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: org.hibernate.SessionFactory com.niit.dao.CartDaoImpl.sessionFactory; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in com.niit.config.ApplicationConfig: Post-processing failed of bean type [class org.springframework.orm.hibernate3.LocalSessionFactoryBean] failed; nested exception is java.lang.IllegalStateException: Failed to introspect bean class [org.springframework.orm.hibernate3.LocalSessionFactoryBean] for persistence metadata: could not find class that it depends on
+	at com.niit.test.CartDaoTest.initialize(CartDaoTest.java:23)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: org.hibernate.SessionFactory com.niit.dao.CartDaoImpl.sessionFactory; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in com.niit.config.ApplicationConfig: Post-processing failed of bean type [class org.springframework.orm.hibernate3.LocalSessionFactoryBean] failed; nested exception is java.lang.IllegalStateException: Failed to introspect bean class [org.springframework.orm.hibernate3.LocalSessionFactoryBean] for persistence metadata: could not find class that it depends on
+	at com.niit.test.CartDaoTest.initialize(CartDaoTest.java:23)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in com.niit.config.ApplicationConfig: Post-processing failed of bean type [class org.springframework.orm.hibernate3.LocalSessionFactoryBean] failed; nested exception is java.lang.IllegalStateException: Failed to introspect bean class [org.springframework.orm.hibernate3.LocalSessionFactoryBean] for persistence metadata: could not find class that it depends on
+	at com.niit.test.CartDaoTest.initialize(CartDaoTest.java:23)
+Caused by: java.lang.IllegalStateException: Failed to introspect bean class [org.springframework.orm.hibernate3.LocalSessionFactoryBean] for persistence metadata: could not find class that it depends on
+	at com.niit.test.CartDaoTest.initialize(CartDaoTest.java:23)
+Caused by: java.lang.NoClassDefFoundError: [Lorg/hibernate/engine/FilterDefinition;
+	at com.niit.test.CartDaoTest.initialize(CartDaoTest.java:23)
+Caused by: java.lang.ClassNotFoundException: org.hibernate.engine.FilterDefinition
+	at com.niit.test.CartDaoTest.initialize(CartDaoTest.java:23)
+
